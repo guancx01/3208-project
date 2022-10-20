@@ -1,0 +1,478 @@
+/* #bg {
+    color: red;
+    background: url("/assets/img/bg_2.jpg");
+    width: 100vw; 
+    height: 500px; 
+    background-size: 100% 100%;
+} */
+
+* {
+	margin: 0;
+	padding: 0;
+    /* position: relative; */
+}
+
+@media only screen and (max-width: 300px) {
+    header h1 {
+        font-size: 90%;
+        line-height: 1.5em;
+    }
+
+    h2 {
+        font-size: 90%;
+    }
+
+    body {
+        background-color: #1fc8db;
+        font-size: 50%;
+        line-height: 1.5em;
+    }
+    img {
+        width: 50%;
+        height: auto;
+    }
+
+    header .Home {
+        height: 50%;
+        width: auto;
+    }
+} 
+
+/* body */
+body {
+	background: #b0eeb7;
+    
+}
+
+/* section */
+
+#Information {
+    padding-left: 8em;
+    font-family: 'Segoe Print', Times, serif;
+    font-size: 30px;
+}
+
+/* div */
+
+div {
+    display: flex;
+    width: 100%;
+}
+
+/* header */
+header {
+    background-color: #F2F201;
+    width: 100%;
+    font-family: 'Perpetua Titling MT', Times, serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    color: #F12020;
+    list-style: none;
+}
+
+h2 {
+    font-family: 'Perpetua Titling MT', Times, serif;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: #F12020;
+}
+
+h3 {
+    font-family: 'Segoe Print', Times, serif;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 60px;
+    color: #fb1df4;
+}
+
+h5 {
+    font-family: 'Stencil', Times, serif;
+    color: #2043F1;
+    font-size: 45px;
+    padding: 1em;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'Perpetua Titling MT', Times, serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#Help-documentation {
+    font-family: 'Sitka Display', Times, serif;
+    font-size: 25px;
+    padding: 2.0em 5.0em;
+    line-height: 50px;
+}
+
+#interactive3 {
+    font-size: 65px;
+    text-align: center;
+    padding: 1em 15em;
+    font-family: 'Segoe Print', Times, serif;
+    color: #F12020;
+}
+
+h4 {
+    font-family: 'Segoe Print', Times, serif;
+    width: 100%;
+    font-weight: normal;
+    color: #fb1df4;
+    font-size: 60px;
+}
+
+/* menu */
+#header-menu ul {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+#header-menu li {
+    list-style: none;
+    width: 100%;
+    font-size: 40px;
+}
+
+#menu {
+	background-color: #b5bab2;
+}
+
+#menu ul {
+	padding: 0.5em 0;
+    display: flex;
+	text-align: center;
+}
+
+#menu li {
+	list-style: none;
+    padding: 0.3em 5.0em;
+    width: 100%;
+}
+
+#menu a:hover {
+	background: rgb(255, 255, 255);
+}
+
+#menu a {
+	display: block;
+	color: #2043F1;
+    border-color: white;
+    font-weight: bold;
+    font-size: 20px;
+	text-decoration: none;
+	padding: 0.25em 0.5em;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+#menu li.current a {
+	background: white;
+	color: #000000;
+	text-shadow: none;
+}
+
+#News-list-1 ul {
+    list-style: none;
+    display: flex;
+}
+
+#News-list-1 li {
+    padding: 2em 4em;
+    width: 100%;
+    font-family: "Segoe UI", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#News-list-2 ul {
+    list-style: none;
+    display: flex;
+}
+
+#News-list-2 li {
+    padding: 2em 4em;
+    width: 100%;
+    font-family: "Segoe UI", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Relevant-search ul{
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    padding: 50px;
+}
+
+#Relevant-search li {
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+}
+
+#Dealers-list ul{
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    padding: 50px;
+}
+
+#Dealers-list li {
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+}
+
+/* footer */
+#page-footer {
+    background-color: #b5bab2;
+    position: fixed;
+    bottom: 0;
+}
+
+#secondary-menu ul {
+    display: flex;
+    text-align: center;
+}
+
+#secondary-menu li {
+    list-style: none;
+    padding: 0.3em, 0.3em;
+    padding-right: 1.0em;
+    width: 100%;
+}
+
+#secondary-menu li.AB {
+    color: #d54b4b;
+    text-align: center;
+    padding: 4.0em 2.5em;
+}
+
+#secondary-menu li.Clickable a {
+    display: block;
+	color: #2043F1;
+    font-weight: bold;
+    font-size: 20px;
+	text-decoration: underline;
+	padding: 4.0em 0.5em;
+	text-transform: uppercase;
+}
+
+#secondary-menu li.current a {
+    display: block;
+	color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+	text-decoration: underline;
+	padding: 4.0em 0.5em;
+	text-transform: uppercase;
+}
+
+#channel-menu-find a:hover {
+	background: rgb(255, 255, 255);
+}
+
+#channel-menu-find ul {
+    display: flex;
+    text-align: center;
+    padding: 7em 7em;
+}
+
+#channel-menu-find li {
+    list-style: none;
+    padding: 0.3em 5.0em;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#channel-menu-find a {
+    display: block;
+	color: #2043F1;
+    border-color: white;
+    font-weight: bold;
+    font-size: 3em;
+	text-decoration: none;
+	padding: 0.25em 0.5em;
+	text-transform: uppercase;
+}
+
+#channel-menu-find li:hover {
+	background: rgb(255, 255, 255);
+}
+
+#Searching {
+    padding-left: 50em;
+}
+
+#Searching button {
+    height: 3em;
+    width: auto;
+}
+
+/* Form */
+
+fieldset {
+    margin-bottom: 2em;
+    padding: 4em 5em;
+    border: 0;
+    border-radius: 10px;
+    background: #b0eeb7;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1em 3em;
+    margin: 0.3em 3em;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(150deg, #f37d06 51%, #ef1414 75%);
+}
+
+fieldset .form-item {
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+fieldset .form-item > label {
+    font-family: 'Rockwell', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    width: 25%;
+    padding-right: 2em;
+    padding-left: 17em;
+    text-align: center;
+    text-shadow: rgba(0,0,0,0.3) 2px 2px 3px;
+}
+fieldset .form-item .form-element {
+    width: 75%;
+}
+
+fieldset .form-item .form-element > label {
+	display: block;
+}
+
+input[type=text], textarea {
+    box-shadow: rgba(209, 0, 224, 0.861) 3px 3px 5px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+input[type=text]:focus {
+    border-color: #12d265;
+}
+
+input[type=radio] {
+    margin-right: 1em;
+    font-family: 'Rockwell', Times, serif;
+    font-size: 15px;
+    padding: 3px;
+}
+
+input[type=checkbox] {
+    margin-right: 1em;
+    height: 2em;
+    width: 2em;
+}
+
+input[type=password] {
+    box-shadow: rgba(209, 0, 224, 0.861) 3px 3px 5px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+select {
+    font-size: 20px;
+    height: 2em;
+    width: auto;
+    border-radius: 5px;
+    border-color: #F12020;
+    padding-right: 2em;
+}
+
+button {
+    font-weight: bold;
+    font-family: 'Rockwell', Times, serif;
+    font-size: 2em;
+    padding: 1em 2em;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, rgb(24, 27, 104), rgb(98, 89, 162));
+    cursor: pointer;
+    float: right;
+}
+
+/* Information */
+
+#Information {
+	display: flex;
+}
+
+#Information article {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto 100px;
+	padding-bottom: 1.5em;
+	padding-top: 70px;
+}
+
+#Information article > p {
+	margin-bottom: 1em;
+	color: rgb(146, 12, 12);
+    font-weight: bold;
+}
+
+#Information article .Car-details {
+	display: none;
+}
+
+body.js #Information article .Car-details {
+	display: block;
+}
+
+body.js #Information article .Car-details a {
+	color: rgb(146, 12, 12);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+body.js #Information article .Car-details a:after {
+	content: "\25BC";
+	padding-left: 0.5em;
+}
+
+body.js #Information article .hidden-statistics {
+    transition: 3s;
+	height: 0;
+	overflow: hidden;
+}
+
+body.js #Information article.expanded .hidden-statistics {
+	height: 50%;
+}
+
+body.js #Information article.expanded .Car-details {
+	display: none;
+}
