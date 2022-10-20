@@ -33,7 +33,7 @@ services:
     image: mariadb:latest
     environment:
       - MYSQL_ROOT_PASSWORD=MyDBRoot123
-      - MYSQL_DATABASE=cloud_computing
+      - MYSQL_DATABASE=infs3208_project
       - MYSQL_USER=guan
       - MYSQL_PASSWORD=sql123
     deploy:

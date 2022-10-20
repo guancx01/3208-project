@@ -7,8 +7,8 @@ echo "<br>";
 echo "<br>";
 
 $servername = "mysql";
-$username = "php";
-$password = "php";
+$username = "guan";
+$password = "sql123";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password);
