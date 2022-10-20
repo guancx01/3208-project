@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   # Web service layer
-  nginx:
+  mynginx:
     image: nginx:alpine
     volumes:
       - "./app:/var/www/html"
@@ -34,23 +34,15 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=MyDBRoot123
       - MYSQL_DATABASE=cloud_computing
-      - MYSQL_USER=php
-      - MYSQL_PASSWORD=php
+      - MYSQL_USER=guan
+      - MYSQL_PASSWORD=sql123
     deploy:
       mode: replicated
       replicas: 3
       labels: [MySQLDatabase]
       restart_policy:
         condition: on-failure
-
-  redis:
-    image: redis:latest
-    deploy:
-      mode: replicated
-      replicas: 3
-      restart_policy:
-        condition: on-failure
-
+  
   phpmyadmin:
     ports:
       - "8080:80"
@@ -61,6 +53,14 @@ services:
       mode: replicated
       replicas: 1
       labels: [Admin]
+      restart_policy:
+        condition: on-failure
+
+  redis:
+    image: redis:latest
+    deploy:
+      mode: replicated
+      replicas: 3
       restart_policy:
         condition: on-failure
 
